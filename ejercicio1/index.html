@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Ejercicio 1 clase de Diseño Web.">
+    <meta name="author" content="Mariana Rodriguez">
+    <title>EJERCICIO 1</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+    html {scroll-behavior: smooth
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+           <nav>
+               <ul> <!--ul es para bullets, ol es para dar unb orden numérico (shortcut cmd+shift+!)-->
+                    <a href="#"><li>Inicio</li></a> <!-- el # es para que la liga, no me lleve a ningun lugar -->
+                    <a href="portafolio.html">
+                        <li>Portafolio</li>
+                    <a href=""><li>Fotografía</li></a>
+                    <a href=""><li>Diseño</li></a>
+                    <a href="#contacto"><li>Contacto</li></a>
+               </ul>
+           </nav>
+        </header>
+
+        <main>
+                <h1>Primer página web.</h1> 
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum placeat commodi ab quaerat fugiat saepe eos ipsum? Odio placeat maxime eos voluptatum eligendi labore, numquam suscipit. Velit quaerat mollitia fuga.
+                </p>
+                <p class="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus eius dolor modi deleniti fugiat! Perspiciatis, quas porro. Officiis, blanditiis adipisci iste provident sunt eaque voluptatum, harum fuga quas veniam delectus!
+                </p>
+
+                <section>
+                    <h2>Imágenes</h2>
+                    <img src="images/pen.jpg" alt="Pluma sobre papel">
+                    <img src="images/book.png" alt="Imagen libro antiguo">
+                    <img src="images/coffe.gif" alt="GIF Café">
+                    <img src="images/quill.svg" alt="Pluma de ave para escribir">
+                </section>
+                
+                <section>
+                    <h2>videos</h2>
+                    <video controls>
+                        <source src="media/medusa.mp4" type="video/mp4">
+                        <source src="media/medusa.ogg" type="video/ogg">
+                      Your browser does not support the video tag.
+                      </video>
+                </section>
+
+                <section>
+                    <h2>Audio</h2>
+                    <audio controls>
+                        <source src="media/song1.ogg" type="audio/ogg">
+                        <source src="media/song1.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                      </audio>
+                </section>
+
+                <section>
+                    <h2>Videos Online</h2>
+                    <h3>YouTube</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JGPB_IvmAJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+
+                <section>
+                    <h2>Mapa</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7526.413107200679!2d-99.26423317854888!3d19.403479447603193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20138891b3483%3A0xfc7f5357ee925110!2sUniversidad%20An%C3%A1huac%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1579184648384!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </section>
+
+
+                
+
+        </main>
+        <footer id="contacto">
+            <ul>
+                <a href="https://www.facebook.com/marianarockdriguezparra"
+                target="_blank"><li><img src="images/fblogo.svg" alt="Logo de Facebook." class="logo"></li></a>
+                <a href="https://www.instagram.com/username_mariana/?hl=es-la"
+                target="_blank"><li><img src="images/iglogo.svg" alt="Logo de Instagram" class="logo"></li></a>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
