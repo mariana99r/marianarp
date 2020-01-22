@@ -1,0 +1,44 @@
+#container {
+    height: 100vh; /* viewport height para cocupara toda la pantalla */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+header {
+    background-color: #b8f2fa;
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+}
+
+main {
+    background-color: #a8fffb;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+}
+
+
+footer {
+color: white;
+background-color: #000000;
+grid-column: 1 / 7;
+grid-row: 6 / 7;
+}
+
+.confondo {
+    background-image: url(https://rawpixel-live.imgix.net/collection/cover/0b17b78e1d2534d98df8d5990e40e6a4_cover.jpg?w=350&h=350&dpr=1&fit=crop&crop=faces&auto=format&fm=pjpg&q=75&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=91001e6a5a9950c194a71210cab2651f);
+    grid-column: 2 / 7;
+    grid-row: 4 / 6;
+}
+
+.sinfondo {
+    background-color: #dc143c6b;
+    grid-column: 5 / 7;
+    grid-row: 2 / 4;
+    z-index: 2;
+}
+
+h1, h2, p {
+    padding: .5rem;
+}
