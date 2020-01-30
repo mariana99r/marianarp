@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imágenes Responsivas</title>
+    <link rel="stylesheet" href="css/res.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <h1>Imágenes Responsivas</h1>
+    </header>
+    <main>
+        <img src="images/img-1920.jpg" 
+            alt="Imagen Dr Strange" 
+            sizes="(max-width: 1920px) 100vw, 1920px"
+            srcset="
+                images/img-468b.jpg 468w,
+                images/img-768.jpg 768w,
+                images/img-1024.jpg 1024w,
+                images/img-1200.jpg 1200w, 
+                images/img-1600.jpg 1600w, 
+            ">
+        
+        <picture>
+            <source media="(max-width: 767px)" srcset="images/img-468.jpg">
+            <source media="(min-width: 768px)" srcset="images/img-768.jpg">
+            <img src="images/img-1200.jpg" alt="Marvel">
+        </picture>
+
+    </main>
+    <footer>
+        <p>Sitio ®</p>
+    </footer>
+</div>
+    
+</body>
+</html>
