@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="content" content="Ejercicio4, vivus.js">
+    <meta name="author" content="Mariana Rodriguez">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <title>Ejercicio 4</title>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vivus.js</h1>
+        </header>
+
+        <aside>
+            <ul>
+                <li><a href="https://maxwellito.github.io/vivus/">Vivus</a></li>
+                <li><a href="https://github.com/maxwellito/vivus">Vivus GitHub</a></li>
+                <li><a href="https://www.jsdelivr.com/package/npm/vivus">Vivus CDN</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <h2>SVG Directo</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 301.65 347.32"><defs><style>.cls-1{fill:none;stroke:#0c8481;stroke-linecap:round;stroke-miterlimit:10;stroke-width:5.67px;}</style></defs><title>M</title><g id="svg-m" data-name="Layer 2"><g id="svg-m" data-name="Layer 1"><polygon class="cls-1" points="2.83 34.22 2.83 330.65 40.19 343.36 40.19 44.55 2.83 34.22"/><polyline class="cls-1" points="40.19 44.55 168.13 200.32 296.88 13.56 255.55 3.23 143.5 168.53"/><polyline class="cls-1" points="40.19 343.36 88.66 338.6 88.66 188.79 168.53 289.32 249.19 167.73 249.19 318.73 296.88 313.17 298.82 13.35"/><polyline class="cls-1" points="168.53 289.32 126.81 278.2 88.66 225.75"/><polyline class="cls-1" points="249.19 318.73 206.28 307.6 206.28 232.42"/></g></g>
+                </svg>
+            
+            <h2>En objeto</h2>
+            <object id="my-svg" type="image/svg+xml" data="images/vector.svg"></object>
+
+            <h2>En div</h2>
+            <div id="m"></div>
+
+        </main>
+
+        <footer><p>¡Yeah!</p></footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.js"></script>
+
+    <script>
+         new Vivus('svg-m', {duration: 200});
+         new Vivus('my-svg', {type: 'delayed', duration: 150});
+         new Vivus('m', {duration: 100, type: 'scenario-sync', file: 'images/vector.svg'});
+    </script>
+    
+</body>
+</html>

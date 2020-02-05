@@ -1,0 +1,109 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+  /* mis estilos*/
+  .container {
+	  display: grid;
+	  grid-template-columns: repeat(6, 1fr);
+	  grid-template-rows: repeat(4, 1fr);
+	  grid-template-areas: 
+	  "cabeza cabeza cabeza cabeza lado lado"
+	  ". principal principal principal lado lado"
+	  ". principal principal principal lado lado"
+	  ". principal principal principal lado lado"
+	  "pie pie pie pie pie pie";
+	  gap: 5px;
+  }
+
+  header {
+	  grid-area: cabeza;
+	  background-color: rgb(255, 158, 123);
+  }
+
+  main {
+	  grid-area: principal;
+	  background-color: rgb(255, 196, 255);
+	  display: flex;
+	  flex-wrap: wrap;
+  }
+
+  aside {
+	  grid-area: lado;
+	  background-color: rgb(104, 207, 207);
+  }
+
+  footer {
+	  grid-area: pie;
+	  background-color: rgb(96, 160, 96);
+	  color: rgb(238, 238, 238);
+  }
+
+  h1,h2,p,li{
+	font-family: 'Racing Sans One', cursive;
+	padding: .4rem;
+}
+
+h1{
+	font-size:4rem;
+	color:#ffffff;
+}
+
+  object, svg {
+	width: 20vw;
+}
+
