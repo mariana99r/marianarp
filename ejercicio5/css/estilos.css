@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* Mis EStilos*/
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .container {
+      width: 80vw;
+      margin: 0 auto; /* Para centrar de forma rápido el contenido*/
+      background-color: #ffedd2;
+  }
+
+  h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      padding-bottom: 3rem;
+  }
+
+  h2 {
+      font-size: 2rem;
+      font-weight: 700;
+  }
+
+  p {
+      font-weight: lighter;
+      line-height: 1.5rem;
+  }
+
+    h2, p, img {
+      padding: .4rem;
+  }
+
+  #arbolpng {
+      width: 200px;
+      float: left;
+      shape-outside: circle(112px at center center);
+  }
+
+  #arbol2 {
+      float: left;
+      clip-path: polygon(24.17% 14.93%, 63.96% 16.04%, 77.23% 38.81%, 76.91% 81.10%, 54.35% 99.44%, 23.85% 98.34%, 1.92% 87.75%, 1.28% 32.72%);
+      shape-outside: polygon(22.71% 11.49%, 63.75% 13.57%, 80.66% 37.88%, 79.62% 85.02%, 59.05% 99.62%, 18.54% 99.06%, 1.08% 80.21%, 1.09% 34.71%); /*https://bennettfeely.com/clippy/*/
+  }
+
+  #arbol3 {
+    width: 200px;
+    float: left;
+    shape-outside: url(../images/580b585b2edbce24c47b2722.png);
+  }
+
+  main {
+      display: grid;
+      gap: 5px;
+      grid-template-columns: repeat(7,1fr);
+      grid-template-rows: repeat(4,1fr);
+      grid-template-areas: 
+      "u u u . d d d"
+      "u u u . d d d"
+      "t t t . d d d"
+      "t t t . . . ."
+      ;
+  }
+
+  #uno {
+      grid-area: u;
+  }
+
+  #dos {
+      grid-area: d;
+  }
+
+  #tres {
+      grid-area: t;
+  }
+ 
+  article {
+      padding-bottom: 4rem;
+  }
