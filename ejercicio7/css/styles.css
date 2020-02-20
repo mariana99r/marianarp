@@ -138,3 +138,33 @@ footer {
     margin-top: -14rem;
     margin-bottom: -8rem ;
 }
+
+/* Estilos Responsivos */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    html {
+        background-color: black;
+    }
+
+    h1, h2 {
+        color: white;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr 200px;
+        grid-template-areas: 
+        ". . . hea hea hea hea hea"
+        ". . mai . . . . ."
+        ". . mai . . . . ."
+        ". . mai . . . . ."
+        ". . . . . . . ."
+        "foo foo foo foo foo foo foo foo"
+        ;
+    }
+}
