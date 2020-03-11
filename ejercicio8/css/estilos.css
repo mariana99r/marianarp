@@ -1,0 +1,37 @@
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.container {
+width: 80%;
+margin: 0 auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}

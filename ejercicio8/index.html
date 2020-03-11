@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Quicksand&display=swap');
+        </style>
+    <title>Scroll Reveal.</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+
+        </header>
+        <section class="sect">
+            <h1 class="titulo">Scroll Reveal</h1>
+            <p class="parrf">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, deserunt accusamus sit placeat quod porro, ad totam tenetur quidem sunt illum provident debitis nesciunt fuga natus sequi aliquam reiciendis saepe!</p>
+            <p class="parrf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia necessitatibus odio ab placeat iste esse qui, laudantium repudiandae culpa recusandae, voluptate consequuntur impedit doloribus, velit dicta! Repellat, ipsum saepe.</p>
+            <img src="https://i.picsum.photos/id/375/400/300.jpg" alt="imagen de hombre" class="imagen">
+        </section>
+        <section class="sect">
+            <h2>Subtítulo</h2>
+            <img src="https://i.picsum.photos/id/458/400/300.jpg" alt="imgen de paisajed desértico" class="imagen">
+            <p class="parrf">Lorem ipsum dolor sit amet consectetur adipisicing elit. In repudiandae animi consequatur! Numquam a eos at omnis rerum, dolorum ipsam iusto, autem obcaecati, corporis alias sit id quam porro libero.</p>
+            <p class="parrf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem pariatur repellendus dolorum omnis voluptate assumenda necessitatibus? Aspernatur harum doloribus assumenda mollitia quibusdam consectetur cumque, nihil blanditiis laborum iste voluptate at.</p>
+            <img src="https://i.picsum.photos/id/450/400/300.jpg" alt="image de paisaje" class="imagen" id="girar">
+        </section>
+        <footer>Created by Mariana Rodríguez©</footer>
+    </div>
+    <script>
+    ScrollReveal().reveal('.imagen', {
+    delay: 375,
+    duration: 500,
+    reset: true
+});
+ScrollReveal({ distance: '150px' });
+ScrollReveal().reveal('.parrf', { origin: 'top' });
+ScrollReveal().reveal('.titulo', { origin: 'bottom' });
+
+ScrollReveal().reveal('#girar', {
+    rotate: {
+        x: 20,
+        z: 20
+    }
+});
+
+
+    </script>
+</body>
+</html>
