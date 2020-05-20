@@ -1,0 +1,314 @@
+/* Tarjeta de contacto */
+html {
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    background-color: white;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .card {
+    z-index: 1;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: white;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    /*
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.2);
+  */
+  }
+  .card.active {
+    height: 490px;
+  }
+  .banner {
+    z-index: 2;
+    position: relative;
+    margin-top: -154px;
+    width: 100%;
+    height: 150px;
+    background-image: url('https://abcnews4.com/resources/media/ce21653f-72f8-4393-862d-bd4876bf3526-large16x9_07252019FollySunrise.jpg?1564153009074');
+    background-size: cover;
+    border-bottom: solid 1px lightgrey;
+  
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+  }
+  
+  .banner.active {
+    height: 0;
+  }
+  
+  .photo {
+    z-index: 3;
+    position: relative;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    margin: 0 auto;
+    background-image: url('https://scontent.fmex15-1.fna.fbcdn.net/v/t1.0-9/s960x960/81164979_2699368143488781_1255342305519337472_o.jpg?_nc_cat=104&_nc_sid=85a577&_nc_eui2=AeFtZWq5Vw1IP0djWqxp-qo2jazWV8sjq9aNrNZXyyOr1vP71gguCUIPv87hj4oLZl2AUcal-mdB_VRkmCioFHRp&_nc_ohc=L6xI2TJ8jK8AX8x2_Rk&_nc_ht=scontent.fmex15-1.fna&_nc_tp=7&oh=b696349e3b605442e3fffbb83f3897ab&oe=5EEBA5D8');
+    background-size: cover;
+    background-position: 50% 50%;
+    top: 75px;
+    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    -webkit-transition: top 0.7s ease-in-out, background 0.15s ease;
+    -moz-transition: top 0.7s ease-in-out, background 0.15s ease;
+    -o-transition: top 0.7s ease-in-out, background 0.15s ease;
+    -ms-transition: top 0.7s ease-in-out, background 0.15s ease;
+  }
+  
+  .photo.active {
+    top: -80px;
+  }
+  .card ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 87px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+  }
+  
+  .card ul.active {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .card i {
+    font-size: 25px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 150px;
+    width: 300px;
+    text-align: left;
+    color: #c7d0e1;
+  }
+  
+  button.contact {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -15px;
+    width: 100%;
+    height: 35px;
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat', ;
+    color: rgb(121, 121, 121);
+    background-color: #c7d0e1;
+    font-size: 12px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+  button.contact:hover {
+    cursor: pointer;
+    background-color: #979da8;
+  }
+  
+  button.contact:focus {
+    outline: 0;
+  }
+  
+  
+  
+  .email-form {
+    height: 0;
+    overflow: hidden;
+    /*    background-color: #C7D0E1;*/
+    width: 300px;
+    z-index: -1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .email-form.active {
+    height: 310px;
+    z-index: 3;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  
+  .email-form input {
+    width: 200px;
+    text-transform: capitalize;
+    /*    background-color: #a4acbc;*/
+    margin: 0 auto;
+    font-family: inherit;
+    border: 1px solid #dadee5;
+    /*    border: 1px solid black;*/
+    margin-top: 35px;
+    height: 30px;
+    display: block;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+  }
+  .email-form input:focus,
+  .email-form textarea:focus {
+    /*    border: none;*/
+    border: 1px solid grey;
+    outline: none;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    /*    color: black;*/
+  }
+  .email-form textarea {
+    width: 200px;
+    text-transform: capitalize;
+    background-color: white;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+    border: 1px solid #dadee5;
+    font-family: inherit;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+  .email-form button {
+    margin-top: 60px;
+  }
+  
+
+/*********************************** MENU *********************************/
+
+header {
+    margin-top: -10;
+    font: bold 14px/1.4 'Montserrat', sans-serif;
+    background: rgb(27, 27, 27);
+    align-items: center;
+  }
+  
+  
+  .menubar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    width: 100vw;
+    scrollbar-shadow-color: rgb(37, 37, 37);
+    margin-top: -40px;
+  }
+  
+  .menubar ul:nth-child(1) { 
+    margin: 3vh auto 0 auto; 
+    padding: 0; 
+    list-style: none; 
+    display: flex;
+    width: 600px;
+
+    text-align: center;
+    align-content: center;
+    padding-top: 20px;
+  }
+  
+  .menunbar li:nth-child(2) { 
+    position: relative; 
+    padding: 0px 0;
+    text-align: center;
+    text-decoration: none;
+
+  }
+  
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    align-content: center;
+
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  svg{
+    width: 8vw;
+    margin-bottom: -5px;
+    margin-top: -15px;
+ }
+
+ /* FOOTER */
+ footer li{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+  }
+
+
+  footer ul {
+      display: flex;
+      justify-content: right;
+  }
+
+  
+  i.fas, i.fab {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+
+  }
+
+ 
+  

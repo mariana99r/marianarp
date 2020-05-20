@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900|Oswald:400,500,600,700|Raleway:300,400,700,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 /* RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -45,7 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-
 html {
     box-sizing: border-box;
   }
@@ -56,56 +57,93 @@ html {
 /*********************************** MIS ESTILOS ***********************************/
 
 /* FOG EFFECT */
+.fog {
+  height: 100vh;
+  width: 100vw;
+}
+
 section.vanta-effect {
     height: 100vh;
     width: 100vw;
     color: white;
-
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
+    padding-top:0px;
+    padding-left: 150px;
 }
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+h2 {
+  font-family:'Montserrat', sans-serif; 
+  font-size: 5rem;
+  padding-bottom: 50px;
+}
+
+.vl {
+  border-left: 3px solid rgb(255, 255, 255);
+  height: 400px;
+  position: absolute;
+  left: 55%;
+  margin-left: -3px;
+  top: 200px;
+}
+
 
 p {
-    font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-family:'Lato', sans-serif; 
+  font-weight: lighter;
+  font-size: 1rem;
+  padding-left: 590px;
+  padding-right: 100px;
 }
 
-svg{
-   width: 8vw;
-   margin-bottom: -15px;
-}
 
 /* MENU */
-header,html {
-  margin: 0;
+svg{
+  width: 8vw;
+  margin-bottom: -15px;
+}
+
+header {
+  margin-top: -20px;
   font: bold 14px/1.4 'Montserrat', sans-serif;
-  background: #000;
-  margin-top: -68px;
+  background: rgb(27, 27, 27);
+  align-items: center;
 }
 
 
 .menubar {
-  position: sticky;
   position: -webkit-sticky;
+  position: sticky;
   top: 0px;
-  z-index: 2;
-  right: 0px;
-  left: 0px;
+  z-index: 3;
+  width: 100vw;
+  scrollbar-shadow-color: rgb(37, 37, 37);
 }
 
 ul { 
-  margin: 150px auto 0; 
+  margin: 3vh auto 0 auto; 
   padding: 0; 
   list-style: none; 
   display: table;
   width: 600px;
   text-align: center;
 }
+
 li { 
   display: table-cell; 
   position: relative; 
   padding: 15px 0;
+  text-align: center;
 }
+
 a {
   color: #fff;
   text-transform: uppercase;
@@ -133,8 +171,225 @@ a:hover:after {
   left: 0; 
 }
 
+#picture {
+padding-left: 600px ;
+padding-top: 100px;
+padding-bottom: -100px;
+margin-bottom: -155px;
+}
+
+img {
+  width: 18vw;
+}
+
+/* Footer */
+footer {
+  color: white;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -10px;
+}
+
+i.fas, i.fab {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+/********************** ESTILOS RESPONSIVOS ******************/
+/* menu */
 @media screen and (max-height: 300px) {
 	ul {
 		margin-top: 40px;
 	}
 }
+
+
+@media (min-width: 768px) and (max-width: 1184px) {
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+h2 {
+  font-family:'Montserrat', sans-serif; 
+  font-size: 5rem;
+  padding-bottom: 50px;
+}
+
+.vl {
+  opacity: 0;
+}
+
+
+p {
+  color: #fff;
+  font-family:'Lato', sans-serif; 
+  font-weight: lighter;
+  font-size: 1rem;
+  padding-left: 590px;
+  padding-right: 100px;
+}
+
+#picture {
+  padding-left: 550px ;
+  padding-top: 100px;
+  padding-bottom: -100px;
+  margin-bottom: -150px;
+  }
+  
+  img {
+    width: 18vw;
+  }
+}
+
+.cv a{
+  font-family:'Montserrat', 'sans-serif' ;
+  font-size: .8rem;
+  margin-top: 50px;
+}
+
+@media (min-width: 769px) and (max-width: 1090px) {
+  .vl {
+    opacity: 0;
+  }
+  p {
+    color: #fff;
+    font-family:'Lato', sans-serif; 
+    font-weight: lighter;
+    font-size: 1rem;
+    padding-left: 100px;
+    padding-right: 30px;
+    margin-top: 20px;
+    text-align: right;
+  }
+
+  #picture {
+    padding-left: 250px ;
+    padding-top: 100px;
+    padding-bottom: -100px;
+    margin-bottom: -90px;
+    }
+    
+    img {
+      width: 18vw;
+    }
+  }
+
+
+@media (min-width: 0px) and (max-width: 480px) {
+  section.vanta-effect {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-left: 30px;
+}
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+h2 {
+  font-family:'Montserrat', sans-serif; 
+  font-size: 3rem;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+.vl {
+  border-left: 2px solid rgb(255, 255, 255);
+  height: 400px;
+  position: absolute;
+  left: 55%;
+  margin-left: -3px;
+  top: 200px;
+  opacity: 0;
+}
+
+
+p {
+  color: #fff;
+  font-family:'Lato', sans-serif; 
+  font-weight: lighter;
+  font-size: 1rem;
+  padding-left: 100px;
+  padding-right: 30px;
+  margin-top: 20px;
+  text-align: right;
+}
+
+img {
+  opacity: 0;
+}
+
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  section.vanta-effect {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-left: 30px;
+}
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+h2 {
+  font-family:'Montserrat', sans-serif; 
+  font-size: 3rem;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+.vl {
+  border-left: 2px solid rgb(255, 255, 255);
+  height: 400px;
+  position: absolute;
+  left: 55%;
+  margin-left: -3px;
+  top: 200px;
+  opacity: 0;
+}
+
+
+p {
+  color: #fff;
+  font-family:'Lato', sans-serif; 
+  font-weight: lighter;
+  font-size: 1rem;
+  padding-left: 150px;
+  padding-right: 30px;
+  margin-top: 20px;
+  text-align: right;
+}
+
+#picture {
+  padding-left: 380px ;
+  padding-top: 0px;
+  margin-bottom: -100px;
+  margin-top: -50px;
+  }
+  
+  img {
+    width: 35vw;
+  }
+}
+
+
+
